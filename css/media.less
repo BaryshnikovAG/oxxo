@@ -1,0 +1,523 @@
+/* ============= General classes  ============= */
+
+.navbar-oxxo {
+	width: 100%;
+	margin-top: 0;
+	background: #343434 + 50;			
+	border: none;			
+	ul { 
+		margin: 0 auto; 
+		li a { color: #fff; }
+		&.drop-menu { margin-top: -2px; }
+	}
+}
+
+
+
+/* ===========================@media=========================== */
+/* ================Portrait phones and smaller================ */
+@media (min-width: 320px) and (max-width: 479px) {
+	/* Main menu */	
+	header .navbar-wrapper .container-fluid {
+		// div.navbar-header { height: 30px; }
+		nav.navbar { margin-bottom: 0; }
+		} 
+	
+	header .main-menu ul li { display: block; }	
+	header .row#row-navbar, .about-us-menu .row#row-navbar-au {		
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		.main-menu { .navbar-oxxo; }		
+	}
+	/* Carousel */
+	.arrow { height: 30px; }	
+	#main-carousel {
+		.carousel-inner {
+			.main-caption {
+			 	h1 { 
+			 		font-size: 1.62em; 
+			 		margin-top: 0px;
+			 	}
+			 	p {
+			 		margin: 0;
+			 		font-size: .7em;
+			 	}			 	
+			 	.carousel {
+			 		&-menu {
+						li {
+						&:not([class="first-li-cm"]) { margin-left: 10px; }
+						a {
+							padding: 1px 2px; 
+			 				font-size: 0.875em;
+						}
+					}				
+			 		}
+					&-menudown {
+						a, span { font-size: .8em; }
+					}
+			 	}
+			 	a#last-menudown { 
+			 		padding: 1px 2px; 
+			 		font-size: 0.875em;
+			 	}
+			}						  
+		}
+		a.carousel-control {
+			height: 20px;
+			width: 20px;
+			&[data-slide="prev"] { 
+				left: 5px; 
+				img { left: 0; }			
+			}
+			&[data-slide="next"] {
+				right: 5px; 
+				img { right: 0; }
+			}
+		}	
+	}
+
+	
+	/* About us */
+	section.about-us {
+		.caption-h h1 { margin-top: 35px; }
+		.third-row {
+			margin-top: 20px;
+			.what-is-oxxo {				
+				h2 { 
+					display: block; 
+					margin-top: 15px; 
+				}
+				.button-au {
+					font-size: 10px;
+					width: 129px;
+					height: 40px;
+					margin-top: 10px;
+					margin-right: 15px;
+					&:last-child { margin-right: 0; }
+				}
+			}	
+		}
+	}
+	/* Amazing */
+	section.amazing {
+		margin-top: 50px;
+		p.amazing-lorem { margin-bottom: 60px; }
+		.amazing-content {
+			h2 { margin-bottom: 10px; }
+			p, &:last-child p { margin-bottom: 40px; }
+			.last-div-ac p { margin-bottom: 0; }
+		}
+	}
+	/* Buy Oxxo now! */	
+	section.buy-oxxo-now {
+		button.button-buy { 
+			font-size: 10px;
+					width: 129px;
+					height: 40px;
+					margin-top: 10px;
+					margin-right: 5px;
+					&:first-of-type { margin-right: auto; }
+		}
+	}
+	/* Responsive. Powerful */
+	section.powerful {		
+		.powerful {
+			&-lorem { margin-bottom: 45px; }
+			&-content {
+				img {
+					height: 238px;
+					width: 277.5px;
+				}
+			}			
+			&-logo {
+				height: 50px;
+				width: 50px;
+				i.fa { font-size: 1.2em; }
+			}			
+		} 
+	}
+	/* Footer */
+	footer .container .row {
+		.footer-content {
+			.latest-text h3 {
+				margin-top: 10px;
+			}
+		}
+		
+	}
+}
+
+
+/* =============Landscape phones and portrait tablets============= */
+@media (min-width : 480px) and (max-width : 629px) {
+	header .main-menu ul li { display: block; }	
+	/* Main menu */
+	header .row#row-navbar, .about-us-menu .row#row-navbar-au {		
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		.main-menu { .navbar-oxxo; }		
+	}
+	/* Carousel */
+	.arrow { height: 50px; }	
+	#main-carousel {
+		.carousel-inner {
+			.main-caption {
+			 	h1 { 
+			 		font-size: 2em; 
+			 		margin-top: 30px;
+			 	}
+			 	p {
+			 		margin-top: 10px;
+			 		font-size: 1em;
+			 	}	
+			 	.carousel-menu li a, a#last-menudown { 
+			 		padding: 2px 5px; 
+			 		font-size: 0.83em;
+			 	}
+			 	
+			 	.carousel-menudown a { font-size: 1em; }
+			}					  
+		}
+		 .carousel-control {
+			&[data-slide="prev"] { 
+				left: 10px; 
+				img { left: 10px; }			
+			}
+			&[data-slide="next"] {
+				right: 10px; 
+				img { right: 10px; }
+			}
+		}
+	}
+	/* About us */
+	section.about-us {
+		.caption-h h1 { margin-top: 50px; }
+		.third-row {
+			margin-top: 25px;
+			.what-is-oxxo h2 { 
+				display: block; 
+				margin-top: 15px; 
+			}	
+		}
+	}
+	/* Amazing */
+	section.amazing {
+		margin-top: 100px;
+		p.amazing-lorem { margin-bottom: 70px; }
+		.amazing-content {
+			p, &:last-child p { margin-bottom: 40px; }
+			.last-div-ac p { margin-bottom: 0; }
+		}
+	}
+	/* See our work */
+	.see-our-work {
+		.work {
+			.work-img {
+				div.thumbnail {
+				transform: translateX(-50%);
+				left: 50%;	
+				top: 0;
+			}
+			}
+		}
+	}
+	/* Responsive. Powerful */
+	section.powerful {		
+		.powerful {
+			&-content {
+				img {
+					height: 357px;
+					width: 416.25px;
+				}
+			}			
+			&-logo {
+				height: 56px;
+				width: 56px;
+			}
+		} 
+	}
+	/* Footer */
+	footer .container .row {
+		.footer-content {
+			.latest-text h3 {
+				margin-top: 10px;
+			}
+		}
+		
+	}	
+
+}
+
+
+
+/* =============Landscape phones and portrait tablets============= */
+@media (min-width : 630px) and (max-width : 767px) {
+	header .main-menu ul li { display: block; }	
+	/* Main menu */
+	header .row#row-navbar, .about-us-menu .row#row-navbar-au {		
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		.main-menu { .navbar-oxxo; }		
+	}
+	/* Carousel */
+	.arrow { height: 50px; }	
+	div#main-carousel {
+		.carousel-inner {
+			.main-caption {
+			 	h1 { 
+			 		font-size: 3.5em; 
+			 		margin-top: 10px;
+			 	}
+			 	p {
+			 		margin-top: 20px;
+			 		font-size: 1.1em;
+			 	}	
+			 	.carousel-menu li a, a#last-menudown { 
+			 		padding: 5px 10px; 
+			 		font-size: 1.25em;
+			 	}			 	
+			 	.carousel-menudown a { font-size: 1.1em; }
+			}
+		}		  
+	
+	}
+
+	 
+	/* About us */
+	section.about-us {
+		.caption-h h1 { margin-top: 80px; }
+		.third-row {
+			margin-top: 50px;
+			.what-is-oxxo h2 { 
+				display: block; 
+				margin-top: 15px; 
+			}	
+		}
+	}
+	/* Amazing */
+	section.amazing {
+		margin-top: 100px;
+		.amazing-content {
+			p, &:last-child p { margin-bottom: 45px; }
+			.last-div-ac p { margin-bottom: 0; }
+		}
+	}
+
+	/* See our work */
+	.see-our-work {
+		.work {
+			.work-img {
+				div.thumbnail {
+				transform: translateX(-50%);
+				left: 50%;	
+				top: 0;
+			}
+			}
+		}
+	}
+	/* Footer */
+	footer .container .row {
+		.footer-content {
+			.latest-text h3 {
+				margin-top: 10px;
+			}
+		}		
+	}
+	
+}
+
+
+/* =============Landscape phones and portrait tablets============= */
+@media (min-width : 768px) and (max-width : 849px) {	
+	/* Main menu */
+	header #row-navbar .main-menu ul:first-of-type li,
+	.about-us-menu #row-navbar-au .main-menu ul:first-of-type li { margin-right: 0; }
+	header #row-navbar .main-menu ul:last-of-type li,
+	.about-us-menu #row-navbar-au .main-menu ul:first-of-type li { margin-left: 0; }
+	header #row-navbar .main-menu ul li a,
+	.about-us-menu #row-navbar-au .main-menu ul li a { padding: 13px; }
+	/* Carousel */
+	.arrow { height: 50px; }	
+	#main-carousel .carousel-inner {
+		 .main-caption {
+		 	h1 { 
+		 		font-size: 3.6em; 
+		 		margin-top: 60px;
+		 	}
+		 	p {
+		 		margin-top: 40px;
+		 		font-size: 1.1em;
+		 	}	
+		 	.carousel-menu li a, a#last-menudown { 
+		 		padding: 5px 10px; 
+		 		font-size: 1.25em;
+		 	}
+		 	
+		 	.carousel-menudown a { font-size: 1.1em; }
+		 }		  
+	}
+	/* About us */
+	.about-us .third-row .what-is-oxxo h2 { 
+		display: block; 
+		margin-top: 15px; 
+	}
+	/* Amazing */
+	section.amazing {
+		margin-top: 100px;
+		.amazing-content {
+			p, &:last-child p { margin-bottom: 50px; }
+			.last-div-ac p { margin-bottom: 0; }
+		}
+	}
+	/* See our work */
+	.see-our-work {
+		.work {
+			.work-img {
+				div.thumbnail {
+				transform: translateX(-50%);
+				left: 50%;	
+				top: 0;
+			}
+			}
+		}
+	}
+	/* Responsive. Powerful */
+	section.powerful {		
+		
+	}
+	/* Footer */
+	footer .container .row {
+		.footer-content {
+			.latest-text h3 {
+				margin-top: 10px;
+			}
+		}
+		
+	}
+}
+
+
+
+/* =============Landscape phones and portrait tablets============= */
+@media (min-width : 850px) and (max-width : 991px) {	
+	/* Main menu */
+	header #row-navbar .main-menu ul:first-of-type li,
+	.about-us-menu #row-navbar-au .main-menu ul:first-of-type li { margin-right: 0; }
+	header #row-navbar .main-menu ul:last-of-type li,
+	.about-us-menu #row-navbar-au .main-menu ul:first-of-type li { margin-left: 0; }
+	header #row-navbar .main-menu ul li a,
+	.about-us-menu #row-navbar-au .main-menu ul li a { padding: 13px; }
+	/* Carousel */
+	.arrow { height: 50px; }	
+	#main-carousel .carousel-inner {
+		 .main-caption {
+		 	h1 { 
+		 		font-size: 3.8em; 
+		 		margin-top: 60px;
+		 	}
+		 	p {
+		 		margin-top: 40px;
+		 		font-size: 1.2em;
+		 	}	
+		 	.carousel-menu li a, a#last-menudown { 
+		 		padding: 5px 10px; 
+		 		font-size: 1.3em;
+		 	}
+		 	
+		 	.carousel-menudown a { font-size: 1.2em; }
+		 }		  
+	}
+	/* About us */
+	.about-us .third-row .what-is-oxxo h2 { 
+		display: block; 
+		margin-top: 15px; 
+	}
+	/* Amazing */
+	section.amazing {
+		.amazing-content {
+			p, &:last-child p { margin-bottom: 60px; }
+			.last-div-ac p { margin-bottom: 0; }
+		}
+	}
+	/* See our work */
+	.see-our-work {
+		.work {
+			.work-img {
+				div.thumbnail {
+				transform: translateX(-50%);
+				left: 50%;	
+				top: 0;
+			}
+			}
+		}
+	}
+	/* Responsive. Powerful */
+	section.powerful {		
+		 
+	}
+	/* Footer */
+	footer .container .row {
+		.footer-content {
+			.latest-text h3 {
+				margin-top: 10px;
+			}
+		}
+		
+	}
+	
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {	
+	/* Main menu */
+	header #row-navbar .main-menu ul:first-of-type li,
+	.about-us-menu #row-navbar-au .main-menu ul:first-of-type li { margin-right: 0; }
+	header #row-navbar .main-menu ul:last-of-type li,
+	.about-us-menu #row-navbar-au .main-menu ul:first-of-type li { margin-left: 0; }	
+	/* About us */
+	.about-us .third-row .what-is-oxxo .silver-hr { 
+		width: 37%;
+	}
+	/* Amazing */
+	section.amazing {
+		margin-top: 70px;		
+	}
+	/* Responsive. Powerful */
+	section.powerful {
+		.powerful {
+			&-content {
+				img {
+					height: 380.8px;
+					width: 444px;
+					margin-bottom: 0;
+				}
+			}
+			&-blocks {
+				&:not(.last-block) { margin-bottom: 20px; }
+			}
+			&-logo {
+				height: 56px;
+				width: 56px;
+			}
+		} 
+	}
+}
+
+/* ==================Large desktops and laptops================== */
+@media (min-width: 1200px) {
+	/* Responsive. Powerful */
+	section.powerful {
+		.powerful {
+			&-content {
+				img { margin-bottom: 0; }
+			}
+		} 
+	}	
+}
+
+
+
+
+
+
+
